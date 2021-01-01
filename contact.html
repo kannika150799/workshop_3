@@ -2,35 +2,36 @@
   <head>
     <title>Contact_us</title>
     <link rel="stylesheet" href="./src/styles_contact.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <!-- Start Head Bar -->
     <div class="nav">
       <!-- <div class="grid-nav"> -->
-        <div class="box-nav">
+      <div class="box-nav">
+        <div class="logo">
+          <img
+            class="img-bar"
+            src="./access/images/img-bar.png"
+            alt="image-bar"
+          />
+          <p class="text-bar">Le-Beauty</p>
 
-          <div class="logo">
-            <img
-              class="img-bar"
-              src="./access/images/img-bar.png"
-              alt="image-bar"
-            />
-            <p class="text-bar">Le-Beauty</p>
-          
-            <div class="topnav" id="myTopnav">
-              <a class="text-home" href="./home.html">Home</a>
-              <a class="text-about" href="./about.html">About us</a>
-              <a class="text-contact" href="./contact.html">Contact Us</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
-  
-            <!-- <div class="nav-bar" id="myTopnav">
+          <div class="topnav" id="myTopnav">
+            <a class="text-home" href="./home.html">Home</a>
+            <a class="text-about" href="./about.html">About us</a>
+            <a class="text-contact" href="./contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+          <!-- <div class="nav-bar" id="myTopnav">
               <a class="text-home" href="./home.html">Home</a>
               <a class="text-about" href="./about.html">About us</a>
               <a class="text-contact" href="./contact.html">Contact Us</a>
@@ -38,14 +39,13 @@
                 <i class="fa fa-bars"></i>
               </a>
             </div> -->
-          </div>
-  
-          <div class="menu">
-            <button class="button appoin-bt">Make an appointment</button>
-          </div>
-  
         </div>
-        
+
+        <div class="menu">
+          <button class="button appoin-bt">Make an appointment</button>
+        </div>
+      </div>
+
       <!-- </div> -->
     </div>
     <!--End Head Bar -->
@@ -54,7 +54,7 @@
     <div class="contact-body">
       <div class="contact-img-head">
         <div class="contaner-box">
-          <p class="head-text">Contact Us 3</p>
+          <p class="head-text">Contact Us</p>
 
           <div class="contaner-menu">
             <a class="head-menu" href="#home">Home</a>
@@ -73,34 +73,36 @@
       <!-- Start contact-info-- -->
       <div class="contact-info">
         <div class="contener-info">
-          <div class="info1">
-            <p class="head-info">London</p>
-            <p class="info info-address">
-              54 Portland Place<br />
-              London, W1B 1DY<br />
-              United Kingdom
-            </p>
-            <p class="info">
-              8:00 &nbsp; <span> am - </span> &nbsp; 5:00 &nbsp;
-              <span>pm (GMT -3)</span>
-            </p>
-            <a class="info info-phone">Phone: +44 207 323 3888</a>
+          <div class="box-info">
+            <div class="info1">
+              <p class="head-info">London</p>
+              <p class="info info-address">
+                54 Portland Place<br />
+                London, W1B 1DY<br />
+                United Kingdom
+              </p>
+              <p class="info">
+                8:00 &nbsp; <span> am - </span> &nbsp; 5:00 &nbsp;
+                <span>pm (GMT -3)</span>
+              </p>
+              <a class="info info-phone">Phone: +44 207 323 3888</a>
+            </div>
+
+            <div class="info2">
+              <p class="head-info">San Francisco</p>
+              <p class="info info-address">
+                548 Market Street, #88872<br />
+                San Francisco, CA 94104-5401<br />
+                United States
+              </p>
+              <p class="info">
+                8:30 &nbsp; <span> am - </span> &nbsp; 5:00 &nbsp;
+                <span>pm (GMT +7)</span>
+              </p>
+              <a class="info info-phone">Phone: +44 207 323 3888</a>
+            </div>
           </div>
-          
-          <div class="info2">
-            <p class="head-info">San Francisco</p>
-            <p class="info info-address">
-              548 Market Street, #88872<br />
-              San Francisco, CA 94104-5401<br />
-              United States
-            </p>
-            <p class="info">
-              8:30 &nbsp; <span> am - </span> &nbsp; 5:00 &nbsp;
-              <span>pm (GMT +7)</span>
-            </p>
-            <a class="info info-phone">Phone: +44 207 323 3888</a>
-          </div>
-          
+
           <div class="icon-contact">
             <p>Follow us</p>
             <div class="contanner-icon">
@@ -122,35 +124,10 @@
             eiusmod tempor incididunt ut labore et.
           </p>
           <div class="get-input">
-            <input
-              class="input text-input"
-              type="text"
-              id="name"
-              name="Name"
-              placeholder="Your name"
-            /><br />
-            <input
-              class="input text-input"
-              type="text"
-              id="email"
-              name="Email"
-              placeholder="Your email"
-            /><br />
-            <input
-              class="input text-input"
-              type="text"
-              id="email"
-              name="Email"
-              placeholder="Subject"
-            /><br />
-            <textarea
-              class="input message-input"
-              name="message"
-              rows="5"
-              cols="30"
-              placeholder="Your Message"
-            ></textarea
-            ><br />
+            <input class="input text-input" type="text" id="name" name="Name" placeholder="Your name"/><br />
+            <input class="input text-input" type="text" id="email" name="Email" placeholder="Your email"/><br />
+            <input class="input text-input" type="text" id="email" name="Email"  placeholder="Subject"/><br />
+            <textarea class="input message-input" name="message" rows="5" cols="30" placeholder="Your Message"></textarea><br />
             <button class="button-input">Send</button>
           </div>
         </div>
@@ -163,7 +140,6 @@
     <div class="section-footer">
       <div class="inbox-footer">
         <div class="contanner-footer">
-          
           <div class="box-contact">
             <div class="contaner-contact">
               <div class="text-address">
@@ -182,74 +158,68 @@
               </div>
             </div>
             <div class="box-icon">
-              <img
-                class="icon-social"
-                src="./access/images/facebook.png"
-                alt="facebook"
-              />
-              <img
-                class="icon-social"
-                src="./access/images/Insta.png"
-                alt="Insta"
-              />
-              <img
-                class="icon-social"
-                src="./access/images/Linkedin.png"
-                alt="in"
-              />
+              <img class="icon-social" src="./access/images/facebook.png" alt="facebook" />
+              <img class="icon-social" src="./access/images/Insta.png" alt="Insta" />
+              <img class="icon-social" src="./access/images/Linkedin.png" alt="in" />
             </div>
           </div>
 
           <div class="contanner-grid">
             <div class="grid-footer-container">
-              <div class="footer-head">Quick link</div>
-              <div class="footer-head">Department</div>
-              <div class="footer-head">Other</div>
-              <a class="grid-footer" href="#whoWeAre">Who We Are</a>
-              <a class="grid-footer" href="#whoWeAre">Who We Are</a>
-              <a class="grid-footer" href="#whoWeAre">Who We Are</a>
-
-              <a class="grid-footer" href="#ourMission">Our Mission</a>
-              <a class="grid-footer" href="#ourMission">Our Mission</a>
-              <a class="grid-footer" href="#ourMission">Our Mission</a>
-
-              <a class="grid-footer" href="#awards">Awards</a>
-              <a class="grid-footer" href="#awards">Awards</a>
-              <a class="grid-footer" href="#awards">Awards</a>
-
-              <a class="grid-footer" href="#experience">Experience</a>
-              <a class="grid-footer" href="#experience">Experience</a>
-              <a class="grid-footer" href="#experience">Experience</a>
+              <div>
+                <div class="footer-head">Quick link</div>
+                <a class="grid-footer" href="#whoWeAre">Who We Are</a>
+                <a class="grid-footer" href="#ourMission">Our Mission</a>
+                <a class="grid-footer" href="#awards">Awards</a>
+                <a class="grid-footer" href="#experience">Experience</a>
+              </div>
+              <div>
+                <div class="footer-head">Department</div>
+                <a class="grid-footer" href="#whoWeAre">Who We Are</a>
+                <a class="grid-footer" href="#ourMission">Our Mission</a>
+                <a class="grid-footer" href="#awards">Awards</a>
+                <a class="grid-footer" href="#experience">Experience</a>
+              </div>
+              <div>
+                <div class="footer-head">Other</div>
+                <a class="grid-footer" href="#whoWeAre">Who We Are</a>
+                <a class="grid-footer" href="#ourMission">Our Mission</a>
+                <a class="grid-footer" href="#awards">Awards</a>
+                <a class="grid-footer" href="#experience">Experience</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- <div class="img-line">
-          <img src="./access/images/Line.png" alt="Line" />
-        </div> -->
+        <div class="box-underLine"><div class="under-line"></div></div>
 
         <div class="send-email">
           <div class="img-iconFooter">
             <img class="img-path" src="./access/images/Path.png" alt="Path" />
-            <p class="text-Path">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-Path">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
           </div>
 
-          <div>
-            <p class="text-new">Stay up to date on the latest Le-Beauty news.</p>
-            <div style="display: flex; flex-direction: row;">
-              <input class="input-email" type="text" id="name" name="Name" placeholder="Your Email"/>
+          <div class="contanner-textNew">
+            <p class="text-new">
+              Stay up to date on the latest Le-Beauty news.
+            </p>
+            <div class="contanner-inputEmail">
+              <input class="input-email" type="text" id="name" name="Name"  placeholder="Your Email"/>
               <button class="send">Send</button>
             </div>
-            
           </div>
-
         </div>
       </div>
     </div>
-    <!-- ---------------------End Section footer-- -->
-    <div class="copyright">© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by LessCreate</div>
-  
+    <!-- -End Section footer-- -->
+    <div class="copyright">
+      <p>© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by
+        LessCreate</p>
+    </div>
+
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -259,11 +229,6 @@
           x.className = "topnav";
         }
       }
-      </script>
-
-      
-    
-  
+    </script>
   </body>
 </html>
-
