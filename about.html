@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>About us</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/styles_about.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -11,39 +12,32 @@
   <body>
     <!-- Start Head Bar   -->
     <div class="nav">
-      <!-- <div class="grid-nav"> -->
       <div class="box-nav">
         <div class="logo">
-          <img
-            class="img-bar"
-            src="./access/images/img-bar.png"
-            alt="image-bar"
-          />
+          <img class="img-bar" src="./access/images/img-bar.png" alt="image-bar" />
           <p class="text-bar">Le-Beauty</p>
 
-          <div class="topnav" id="myTopnav">
-            <a class="text-home" href="./home.html">Home</a>
-            <a class="text-about" href="./about.html">About us</a>
-            <a class="text-contact" href="./contact.html">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-
-          <!-- <div class="nav-bar">
-            <a class="text-home" href="./home.html">Home</a>
-            <a class="text-about" href="./about.html">About us</a>
-            <a class="text-contact" href="./contact.html">Contact Us</a>
-          </div> -->
-        </div>
-
+          <a class="nav-bar text-home" href="./home.html">Home</a>
+          <a class="nav-bar text-about" href="./about.html">About us</a>
+          <a class="nav-bar text-contact" href="./contact.html">Contact Us</a>
+        </div> 
         <div class="menu">
           <button class="button appoin-bt">Make an appointment</button>
         </div>
-        
       </div>
 
-      <!-- </div> -->
+      <a href="javascript:void(0);" class="btn-menu" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav-bar text-home" href="./home.html">Home</a>
+        <a class="nav-bar text-about" href="./about.html">About us</a>
+        <a class="nav-bar text-contact" href="./contact.html">Contact Us</a>
+        <div class="menu">
+          <button class="button appoin-bt">Make an appointment</button>
+        </div>
+      </div>
     </div>
     <!-- End Head Bar -->
 
@@ -88,9 +82,6 @@
         <div class="box-line"><div class="line"></div></div>
       </div>
     </div>
-    
-    
-
     <!-- End section experience -->
 
     <!-- Start section choose -->
@@ -98,11 +89,7 @@
       <p class="head-choose">Why choose us</p>
       <div class="contanner-choose">
         <div class="card-choose">
-          <img
-            class="img-rectangle"
-            src="./access/images/Rectangle1.png"
-            alt="Rectangle1"
-          />
+          <img class="img-rectangle" src="./access/images/Rectangle1.png" alt="Rectangle1" />
           <p class="head-textChoose">Team of leading medical professionals</p>
           <p class="text-choose">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -111,11 +98,7 @@
         </div>
 
         <div class="card-choose">
-          <img
-            class="img-rectangle"
-            src="./access/images/Rectangle2.png"
-            alt="Rectangle1"
-          />
+          <img class="img-rectangle" src="./access/images/Rectangle2.png" alt="Rectangle1" />
           <p class="head-textChoose">
             Professional service - International standards
           </p>
@@ -126,11 +109,7 @@
         </div>
 
         <div class="card-choose">
-          <img
-            class="img-rectangle"
-            src="./access/images/Rectangle3.png"
-            alt="Rectangle1"
-          />
+          <img class="img-rectangle" src="./access/images/Rectangle3.png" alt="Rectangle1" />
           <p class="head-textChoose">The most modern equipment in the world</p>
           <p class="text-choose">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -310,13 +289,11 @@
     </div>
 
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
       }
     </script>
   </body>

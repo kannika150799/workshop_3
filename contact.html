@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Contact_us</title>
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/styles_contact.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -8,45 +9,34 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-
   <body>
     <!-- Start Head Bar -->
     <div class="nav">
-      <!-- <div class="grid-nav"> -->
       <div class="box-nav">
         <div class="logo">
-          <img
-            class="img-bar"
-            src="./access/images/img-bar.png"
-            alt="image-bar"
-          />
+          <img class="img-bar" src="./access/images/img-bar.png" alt="image-bar"/>
           <p class="text-bar">Le-Beauty</p>
-
-          <div class="topnav" id="myTopnav">
-            <a class="text-home" href="./home.html">Home</a>
-            <a class="text-about" href="./about.html">About us</a>
-            <a class="text-contact" href="./contact.html">Contact Us</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-
-          <!-- <div class="nav-bar" id="myTopnav">
-              <a class="text-home" href="./home.html">Home</a>
-              <a class="text-about" href="./about.html">About us</a>
-              <a class="text-contact" href="./contact.html">Contact Us</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div> -->
-        </div>
-
+          <a class="nav-bar text-home" href="./home.html">Home</a>
+          <a class="nav-bar text-about" href="./about.html">About us</a>
+          <a class="nav-bar text-contact" href="./contact.html">Contact Us</a>
+        </div>  
         <div class="menu">
           <button class="button appoin-bt">Make an appointment</button>
         </div>
       </div>
 
-      <!-- </div> -->
+      <a href="javascript:void(0);" class="btn-menu" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav-bar text-home" href="./home.html">Home</a>
+        <a class="nav-bar text-about" href="./about.html">About us</a>
+        <a class="nav-bar text-contact" href="./contact.html">Contact Us</a>
+        <div class="menu">
+          <button class="button appoin-bt">Make an appointment</button>
+        </div>
+      </div>
     </div>
     <!--End Head Bar -->
 
@@ -59,9 +49,7 @@
           <div class="contaner-menu">
             <a class="head-menu" href="#home">Home</a>
             <img class="oval" src="./access/images/Oval.png" alt="ovel" />
-            <a class="head-menu mode-contact-menu" href="#services"
-              >Contact Us</a
-            >
+            <a class="head-menu mode-contact-menu" href="#services">Contact Us</a>
           </div>
         </div>
       </div>
@@ -221,13 +209,11 @@
     </div>
 
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
       }
     </script>
   </body>
